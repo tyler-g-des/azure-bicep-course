@@ -30,7 +30,7 @@ steps:
 - task: AzureCLI@2
   displayName: Deploy Bicep To Azure
   inputs:
-    azureSubscription: 'Azure subscription 1(b3018b99-660a-44a3-a899-9ef70500cdab)'
+    azureSubscription: 'Azure Resource Manager using Workload Identity'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
