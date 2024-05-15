@@ -17,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: Preview Bicep Changes
   inputs:
-    azureSubscription: 'Azure subscription 1(2)(b3018b99-660a-44a3-a899-9ef70500cdab)'
+    azureSubscription: 'Azure Resource Manager using service principal'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
@@ -30,7 +30,7 @@ steps:
 - task: AzureCLI@2
   displayName: Deploy Bicep To Azure
   inputs:
-    azureSubscription: 'Azure Resource Manager using Workload Identity cloud'
+    azureSubscription: 'Azure Resource Manager using service principal'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
